@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroupDine - AI Meeting Point Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>GroupDine 🤝 AI Meeting Point Finder</h1>
+        <p>Enter the starting points and the type of business to find the perfect middle ground.</p>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <h2>Locations and Preferences</h2>
+            <div id="locations-container">
+                <div class="location-input-group">
+                    <input type="text" class="location-input" placeholder="Enter Location 1 (e.g., 'San Francisco, CA')" required>
+                </div>
+                <div class="location-input-group">
+                    <input type="text" class="location-input" placeholder="Enter Location 2 (e.g., 'San Jose, CA')" required>
+                </div>
+            </div>
+            <button id="add-location-btn">+ Add Another Location</button>
+
+            <label for="term-select">Business Type:</label>
+            <select id="term-select">
+                <option value="restaurants">Restaurants</option>
+                <option value="coffee">Coffee Shops</option>
+                <option value="bars">Bars</option>
+                <option value="parks">Parks</option>
+                <option value="museums">Museums</option>
+            </select>
+
+            <button id="find-point-btn">Find Meeting Point</button>
+        </div>
+        
+        <div class="results-section">
+            <h2>Suggested Meeting Places</h2>
+            <div id="results-container">
+                <p class="placeholder-text">Enter your locations and click 'Find Meeting Point' to see results.</p>
+            </div>
+            <div id="error-message" class="hidden"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GroupDine</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
